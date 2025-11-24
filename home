@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Foot Rubs and Soup</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #faf7f2;
+      color: #333;
+      max-width: 750px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 40px;
+      font-size: 1.6rem;
+    }
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 50px;
+      color: #666;
+    }
+    .section {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Foot Rubs and Soup</h1>
+  <p class="subtitle">A small website about giving Nadia everything she’s ever wanted.</p>
+
+  <div class="section">
+    <h2>The Mission</h2>
+    <p>
+      This is a humble corner of the internet dedicated to one beautiful idea:
+      showing Nadia love, comfort, and care in all the ways that matter.
+      Whether it's warm soup on a cold day, a foot rub after a long one, or
+      simply being there with kindness — the goal is simple:
+      <strong>make her feel cherished every single day.</strong>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>What Nadia Deserves</h2>
+    <p>
+      Nadia deserves ease. Softness. Laughter. Rest.  
+      She deserves someone who notices the little things,
+      remembers what matters to her, and gives generously without being asked.
+    </p>
+    <p>
+      She deserves warmth — the literal kind, like a perfect bowl of soup,
+      and the kind that comes from being loved deeply and consistently.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Everything She’s Ever Wanted</h2>
+    <p>
+      This site is a promise:  
+      <strong>to show up, to care, to listen, to make life sweeter,
+      calmer, and more joyful for her.</strong>
+    </p>
+    <p>
+      If Nadia wants comfort, she gets comfort.  
+      If she wants rest, she gets rest.  
+      If she wants connection, she gets presence.  
+      If she wants foot rubs and soup—well, obviously, she gets those most of all.
+    </p>
+  </div>
+
+</body>
+</html>
