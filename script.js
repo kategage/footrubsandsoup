@@ -10,15 +10,30 @@ const soupRecipes = [
   'https://www.seriouseats.com/korean-chicken-and-rice-porridge-dak-juk'
 ];
 
-// Foot rub and spa resources
+// Foot rub and spa resources (regular mode)
 const footRubResources = [
   'https://www.healthline.com/health/pain-relief/massages-for-pressure-points-on-feet',
   'https://www.spafinder.com/find/reflexology/',
   'https://www.dreamstime.com/photos-images/feet-pics.html',
   'https://www.youtube.com/watch?v=SFrc1EvQ80k',
-  'https://www.youtube.com/shorts/g8M9eTqAcDo',
   'https://www.massageenvy.com/massage/personalized-experience/reflexology'
 ];
+
+// Special Nadia Mode link
+const nadiaModeLink = 'https://www.youtube.com/shorts/g8M9eTqAcDo';
+
+// Track Nadia Mode state
+let isNadiaMode = false;
+
+function toggleNadiaMode() {
+  isNadiaMode = document.getElementById('nadiaModeToggle').checked;
+
+  if (isNadiaMode) {
+    document.body.classList.add('nadia-mode');
+  } else {
+    document.body.classList.remove('nadia-mode');
+  }
+}
 
 function getRandomSoup() {
   const randomIndex = Math.floor(Math.random() * soupRecipes.length);
@@ -26,6 +41,12 @@ function getRandomSoup() {
 }
 
 function getFootRubResources() {
-  const randomIndex = Math.floor(Math.random() * footRubResources.length);
-  window.location.href = footRubResources[randomIndex];
+  // In Nadia Mode, always go to the special link
+  if (isNadiaMode) {
+    window.location.href = nadiaModeLink;
+  } else {
+    // Regular mode: random selection from the list
+    const randomIndex = Math.floor(Math.random() * footRubResources.length);
+    window.location.href = footRubResources[randomIndex];
+  }
 }
