@@ -3,108 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
   <title>Foot Rubs & Soup</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta name="title" content="Foot Rubs & Soup">
+  <meta name="description" content="A cozy corner of the internet dedicated to life's simple comforts: warm soup on cold days and soothing foot rubs after long ones.">
 
-    body {
-      font-family: 'Georgia', serif;
-      height: 100vh;
-      overflow: hidden;
-    }
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://footrubsandsoup.com/">
+  <meta property="og:title" content="Foot Rubs & Soup">
+  <meta property="og:description" content="A cozy corner of the internet dedicated to life's simple comforts: warm soup on cold days and soothing foot rubs after long ones.">
+  <meta property="og:image" content="https://footrubsandsoup.com/images/preview.png">
 
-    .container {
-      display: flex;
-      height: 100vh;
-      width: 100vw;
-    }
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://footrubsandsoup.com/">
+  <meta property="twitter:title" content="Foot Rubs & Soup">
+  <meta property="twitter:description" content="A cozy corner of the internet dedicated to life's simple comforts: warm soup on cold days and soothing foot rubs after long ones.">
+  <meta property="twitter:image" content="https://footrubsandsoup.com/images/preview.png">
 
-    .half {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
 
-    .half::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      transition: all 0.3s ease;
-    }
-
-    .half:hover::before {
-      background: rgba(0, 0, 0, 0.3);
-    }
-
-    .soup-side {
-      background-image: url('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2000');
-    }
-
-    .footrub-side {
-      background-image: url('images/footrub.PNG');
-    }
-
-    .button {
-      padding: 1.5rem 4rem;
-      font-size: 2.5rem;
-      background: white;
-      border: none;
-      border-radius: 60px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-      position: relative;
-      z-index: 1;
-      font-family: 'Georgia', serif;
-    }
-
-    .soup-side .button {
-      color: #d4461a;
-    }
-
-    .footrub-side .button {
-      color: #2d7a6e;
-    }
-
-    .button:hover {
-      transform: scale(1.1);
-      box-shadow: 0 12px 35px rgba(0,0,0,0.4);
-    }
-
-    .button:active {
-      transform: scale(1.05);
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .button {
-        font-size: 1.8rem;
-        padding: 1.2rem 3rem;
-      }
-    }
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -124,39 +48,8 @@
     </div>
   </div>
 
-  <script>
-    // List of soup recipe websites
-    const soupRecipes = [
-      'https://www.seriouseats.com/avgolemono-soup-greek-lemon-egg-chicken-soup',
-      'https://www.seriouseats.com/masa-ball-soup-corn-matzo-recipe',
-      'https://www.bonappetit.com/recipe/fenugreek-turmeric-chicken-soup',
-      'https://www.epicurious.com/recipes/food/views/ba-syn-potato-soup-recipe',
-      'https://www.thekitchn.com/easy-pumpkin-soup-261960',
-      'https://food52.com/recipes/89042-best-vegan-creamy-artichoke-soup',
-      'https://food52.com/recipes/87022-chicken-soup-ginger-lentils-potatoes-recipe',
-      'https://www.seriouseats.com/korean-chicken-and-rice-porridge-dak-juk'
-    ];
-
-    // Foot rub and spa resources
-    const footRubResources = [
-      'https://www.healthline.com/health/pain-relief/massages-for-pressure-points-on-feet',
-      'https://www.spafinder.com/find/reflexology/',
-      'https://www.dreamstime.com/photos-images/feet-pics.html',
-      'https://www.youtube.com/watch?v=SFrc1EvQ80k',
-      'https://www.youtube.com/shorts/g8M9eTqAcDo',
-      'https://www.massageenvy.com/massage/personalized-experience/reflexology'
-    ];
-
-    function getRandomSoup() {
-      const randomIndex = Math.floor(Math.random() * soupRecipes.length);
-      window.location.href = soupRecipes[randomIndex];
-    }
-
-    function getFootRubResources() {
-      const randomIndex = Math.floor(Math.random() * footRubResources.length);
-      window.location.href = footRubResources[randomIndex];
-    }
-  </script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 
 </body>
 </html>

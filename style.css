@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.half::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.half:hover::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.soup-side {
+  background-image: url('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2000');
+}
+
+.footrub-side {
+  background-image: url('images/footrub.PNG');
+}
+
+.button {
+  padding: 1.5rem 4rem;
+  font-size: 2.5rem;
+  background: white;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+  font-family: 'Georgia', serif;
+}
+
+.soup-side .button {
+  color: #d4461a;
+}
+
+.footrub-side .button {
+  color: #2d7a6e;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.button:active {
+  transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .button {
+    font-size: 1.8rem;
+    padding: 1.2rem 3rem;
+  }
+}
