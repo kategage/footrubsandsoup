@@ -19,8 +19,9 @@ const footRubResources = [
   'https://www.massageenvy.com/massage/personalized-experience/reflexology'
 ];
 
-// Special Nadia Mode link
-const nadiaModeLink = 'https://www.instagram.com/sexysoupstagram/';
+// Special Nadia Mode links
+const nadiaModeSoupLink = 'https://www.instagram.com/sexysoupstagram/';
+const nadiaModeFootRubLink = 'https://www.youtube.com/shorts/g8M9eTqAcDo';
 
 // Track Nadia Mode state
 let isNadiaMode = false;
@@ -36,14 +37,20 @@ function toggleNadiaMode() {
 }
 
 function getRandomSoup() {
-  const randomIndex = Math.floor(Math.random() * soupRecipes.length);
-  window.location.href = soupRecipes[randomIndex];
+  // In Nadia Mode, go to Instagram
+  if (isNadiaMode) {
+    window.location.href = nadiaModeSoupLink;
+  } else {
+    // Regular mode: random soup recipe
+    const randomIndex = Math.floor(Math.random() * soupRecipes.length);
+    window.location.href = soupRecipes[randomIndex];
+  }
 }
 
 function getFootRubResources() {
-  // In Nadia Mode, always go to the special link
+  // In Nadia Mode, go to YouTube shorts
   if (isNadiaMode) {
-    window.location.href = nadiaModeLink;
+    window.location.href = nadiaModeFootRubLink;
   } else {
     // Regular mode: random selection from the list
     const randomIndex = Math.floor(Math.random() * footRubResources.length);
