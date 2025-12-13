@@ -20,7 +20,7 @@ const footRubResources = [
 ];
 
 // Special Nadia Mode link
-const nadiaModeLink = 'https://www.youtube.com/shorts/g8M9eTqAcDo';
+const nadiaModeLink = 'https://www.instagram.com/sexysoupstagram/';
 
 // Track Nadia Mode state
 let isNadiaMode = false;
