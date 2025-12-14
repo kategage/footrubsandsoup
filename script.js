@@ -7,6 +7,9 @@ const soupRecipes = [
   'https://www.thekitchn.com/easy-pumpkin-soup-261960',
   'https://food52.com/recipes/89042-best-vegan-creamy-artichoke-soup',
   'https://food52.com/recipes/87022-chicken-soup-ginger-lentils-potatoes-recipe',
+  'https://cooking.nytimes.com/recipes/1020049-lemony-chicken-soup-with-fennel-and-dill?smid=ck-recipe-iOS-share',
+  'https://cookieandkate.com/creamy-roasted-cauliflower-soup-recipe/',
+  'https://food52.com/recipes/15247-paul-bertolli-s-cauliflower-soup',
   'https://www.seriouseats.com/korean-chicken-and-rice-porridge-dak-juk'
 ];
 
