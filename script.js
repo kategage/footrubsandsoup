@@ -23,7 +23,7 @@ const footRubResources = [
 ];
 
 // Special Nadia Mode links
-const nadiaModeSoupLink = 'https://www.instagram.com/sexysoupstagram/';
+const nadiaModeSoupLink = 'https://www.tiktok.com/@carolinebaniewicz/video/7573760018596629815?is_from_webapp=1&sender_device=pc&web_id=7388303835876361770';
 const nadiaModeFootRubLink = 'https://www.youtube.com/shorts/g8M9eTqAcDo';
 
 // Track Nadia Mode state
